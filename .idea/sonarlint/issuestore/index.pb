@@ -1,0 +1,41 @@
+
+O
+WebContent/META-INF/MANIFEST.MF,7\e\7e3c1364cb3462ecda722a7cad8cd391378e7818
+7
+pom.xml,4\4\442292b8a7efeabbe4cc176709b833b1792140ec
+d
+4src/com/hepta/funcionarios/persistence/SetorDAO.java,d\e\de98ae0298b442e5cdc3a9ca5fb6a8d7256453f2
+Z
+*WebContent/resources/css/bootstrap-vue.css,a\7\a7ff6212a15eba72c9d922fd78b1205f99b1fd59
+a
+1src/com/hepta/funcionarios/rest/SetorService.java,8\9\894f56a0550b3be7be6c309323ffc07b501bb695
+Z
+*WebContent/resources/css/bootstrap.min.css,6\f\6f63e8cd10a7f6eefc7633d27a2424311c32d4e8
+g
+7src/com/hepta/funcionarios/rest/FuncionarioService.java,6\1\616a464d3c98f41a6b01c1073ab9793dd2c5d965
+\
+,src/com/hepta/funcionarios/entity/Setor.java,f\3\f351fd9b88c1eea2fec13e7dddd54536eba166a1
+b
+2src/com/hepta/funcionarios/entity/Funcionario.java,5\a\5af4f39548fe974e27011613175cbafb439e8cf4
+i
+9src/com/hepta/funcionarios/persistence/HibernateUtil.java,5\f\5f8b4ee488f29db0361700b215a918fda5eee5e3
+j
+:src/com/hepta/funcionarios/persistence/FuncionarioDAO.java,b\1\b13b4fa25ff8984a91e40fd8dcedf4496335d901
+P
+ WebContent/resources/js/index.js,1\5\159d0a0c206c9992d5be4d1f9cf51a1f73d554a8
+\
+,WebContent/resources/js/cadastro-de-setor.js,a\8\a8a550d8d1a1a7ebf8f195424360cce085f6eec1
+b
+2WebContent/resources/js/cadastro-de-funcionario.js,4\0\40f5035b3fb00d1acf67bf6fef585d8a1c68344a
+E
+WebContent/index.html,9\8\98ea0862efe24378132a30e63c5df863b2c480ee
+P
+ WebContent/pages/novo-setor.html,f\0\f04a09c77ac0bbc9e657fadf40628dbb7365713f
+L
+src/META-INF/persistence.xml,c\9\c9542b0c61459454efdae90e75de54a72077498b
+9
+	README.md,8\e\8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d
+8
+HOWTO.md,c\b\cbfed2d6017a7a26d413191eaa77436e69f4ddf2
+V
+&WebContent/pages/novo-funcionario.html,5\9\591717833492bfd559376326bd20a9842522bde5

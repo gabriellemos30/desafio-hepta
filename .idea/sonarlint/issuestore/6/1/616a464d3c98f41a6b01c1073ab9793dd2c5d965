@@ -1,0 +1,9 @@
+
+f	java:S117K"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(°Ý–¤
+f	java:S117a"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¹ê´³
+a
+java:S2583z"DChange this condition so that it does not always evaluate to "false"(±ÊîÏ8®øîÑú0
+M
+java:S1135<"2Complete the task associated to this TODO comment.(ÕÌ®þÿÿÿÿ
+—
+java:S2159z"zRemove this call to "equals"; comparisons against null always return false; consider using '== null' to check for nullity.(±ÊîÏ8ÁøîÑú0

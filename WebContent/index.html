@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="Cache-Control" content="no-store" />
+	<link rel="shortcut icon" href="favicon.ico" />
+	<title>Funcionários - Início</title>
+	<link rel="stylesheet" type="text/css" href="resources/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="resources/css/bootstrap-vue.css">
+</head>
+
+<body>
+	<div id="inicio" class="container-fluid table">
+		<h4>Lista dos Funcionários</h4>
+		<a href="/funcionarios/pages/novo-setor.html">Setores</a>
+		<table>
+			<tr>
+				<th>Nome</th>
+				<th>Setor</th>
+				<th>Salário</th>
+				<th>Email</th>
+				<th>Idade</th>
+				<th></th>
+				<th></th>
+			</tr>
+			<tbody id="event-table">
+				<tr v-for="funcionario in lista">
+					<td>{{ funcionario.nome }}</td>
+					<td>{{ funcionario.setor.nome }}</td>
+					<td>{{ funcionario.salario }}</td>
+					<td>{{ funcionario.email }}</td>
+					<td>{{ funcionario.idade }}</td>
+					<td>
+						<span v-b-modal.modalEditar @click="iniciarEdicaoFuncionario(funcionario.id)" style="cursor: pointer">&#9998;</span>
+						<span @click="deletarFuncionario(funcionario.id)" style="cursor: pointer">&#10006;</span>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+		<a href="/funcionarios/pages/novo-funcionario.html" class="btn btn-primary">Criar Funcionário</a>
+		<br>
+		<div id="form-editar-funcionario" v-if="editandoFuncionario==true">
+			<form>
+				<div class="form-group">
+					<label for="nomeFuncionarioInput">Nome</label>
+					<input v-model="nome" type="text" class="form-control" id="nomeFuncionarioInput" aria-describedby="nomeFuncionarioHelp" placeholder="Insira o nome">
+					<div class="form-group">
+						<label for="idadeInput">Idade</label>
+						<input v-model="idade" type="text" class="form-control" id="idadeInput" aria-describedby="nomeHelp" placeholder="Insira a idade">
+					</div>
+				</div>
+				<div class="input-group mb-3">
+					<div class="input-group-prepend">
+						<label class="input-group-text" for="inputSetor">Setor</label>
+					</div>
+					<select class="custom-select" id="inputSetor" v-model="setor">
+						<option :value="setor.id" v-for="setor in listaSetores">{{setor.nome}}</option>
+					</select>
+				</div>
+				<div class="form-group">
+					<label for="emailInput">Email</label>
+					<input v-model="email" type="text" class="form-control" id="emailInput" aria-describedby="emailHelp" placeholder="Insira o email">
+				</div>
+				<div class="form-group">
+					<label for="salarioInput">Salário</label>
+					<input v-model="salario" type="text" class="form-control" id="salarioInput" aria-describedby="salarioHelp" placeholder="Insira o salário">
+				</div>
+				<button @click.prevent="editarFuncionario" type="submit" class="btn btn-primary">Editar</button>
+			</form>
+		</div>
+	</div>
+
+	<script src="resources/js/vue.js"></script>
+	<script src="resources/js/axios.min.js"></script>
+	<script src="resources/js/index.js"></script>
+</body>
+</html>

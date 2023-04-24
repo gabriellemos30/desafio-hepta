@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<link rel="shortcut icon" href="favicon.ico" />
+	<title>Cadastrar um novo Funcionário </title>
+	<link rel="stylesheet" type="text/css" href="../resources/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="../resources/css/bootstrap-vue.css">
+</head>
+
+<body>
+
+	<a href="/funcionarios/index.html">Voltar</a>
+
+	<div id="app">
+		<h4>Cadastro de funcionário</h4>
+		<div class="cadastro-setor">
+			<div class="form">
+				<form>
+					<div class="form-group">
+						<label for="nomeFuncionarioInput">Nome</label>
+						<input v-model="nome" type="text" class="form-control" id="nomeFuncionarioInput" aria-describedby="nomeFuncionarioHelp" placeholder="Insira o nome">
+						<div class="form-group">
+							<label for="idadeInput">Idade</label>
+							<input v-model="idade" type="text" class="form-control" id="idadeInput" aria-describedby="nomeHelp" placeholder="Insira a idade">
+						</div>
+					</div>
+					<div class="input-group mb-3">
+						<div class="input-group-prepend">
+							<label class="input-group-text" for="inputSetor">Setor</label>
+						</div>
+						<select class="custom-select" id="inputSetor" v-model="setor">
+							<option :value="setor.id" v-for="setor in listaSetores">{{setor.nome}}</option>
+						</select>
+					</div>
+					<div class="form-group">
+						<label for="emailInput">Email</label>
+						<input v-model="email" type="text" class="form-control" id="emailInput" aria-describedby="emailHelp" placeholder="Insira o email">
+					</div>
+					<div class="form-group">
+						<label for="salarioInput">Salário</label>
+						<input v-model="salario" type="text" class="form-control" id="salarioInput" aria-describedby="salarioHelp" placeholder="Insira o salário">
+					</div>
+					<button @click.prevent="criarFuncionario" type="submit" class="btn btn-primary">Cadastrar</button>
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<script src="../resources/js/vue.js"></script>
+	<script src="../resources/js/axios.min.js"></script>
+	<script src="../resources/js/cadastro-de-funcionario.js"></script>
+</body>
+
+</html>

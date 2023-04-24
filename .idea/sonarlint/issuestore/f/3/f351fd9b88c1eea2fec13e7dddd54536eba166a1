@@ -1,0 +1,8 @@
+
+k	java:S117="QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ş§‡Œıÿÿÿÿ
+{
+java:S4165>"`Remove this useless assignment; "id" already holds the assigned value along all execution paths.(£©èÚşÿÿÿÿ
+D
+java:S1172=")Remove this unused method parameter "Id".(Ş§‡Œıÿÿÿÿ
+J
+java:S1656>"/Remove or correct this useless self-assignment.(£©èÚşÿÿÿÿ

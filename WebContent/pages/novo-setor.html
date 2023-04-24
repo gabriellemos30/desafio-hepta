@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<link rel="shortcut icon" href="favicon.ico" />
+		<title>Cadastrar um novo Setor </title>
+		<link rel="stylesheet" type="text/css" href="../resources/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="../resources/css/bootstrap-vue.css">
+	</head>
+
+	<body>
+		<a href="/funcionarios/index.html">Voltar</a>
+		<div id="app" class="container-fluid table">
+			<b-form>
+				<b-form-group
+						id="input-group-1"
+						label="Nome do setor:"
+						label-for="inputNome"
+				>
+					<b-form-input
+							id="inputNome"
+							v-model="nome"
+							type="text"
+							placeholder="Iserir nome"
+							required
+					></b-form-input>
+				</b-form-group>
+				<b-button type="submit" @click.prevent="criarSetor" variant="primary">Submit</b-button>
+			</b-form>
+
+			<div class="lista-setor">
+				<h4>Lista dos Setores</h4>
+				<b-table striped hover :items="listaSetores"></b-table>
+			</div>
+		</div>
+
+		<script src="../resources/js/vue.js"></script>
+		<script src="../resources/js/axios.min.js"></script>
+		<script src="../resources/js/cadastro-de-setor.js"></script>
+		<script src="../resources/js/bootstrap-vue.js"></script>
+	</body>
+</html>
